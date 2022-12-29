@@ -8,5 +8,8 @@ spec:
   interval: 5m0s
   path: ./apps
   prune: true
+  sourceRef:
+    kind: GitRepository
+    name: flux-system
   targetNamespace: default
 
