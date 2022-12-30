@@ -3,4 +3,4 @@ kind: Kustomization
 namespace: flux-system
 resources:
   - istio.yaml
-  - flagger.yaml
+  - flagger
