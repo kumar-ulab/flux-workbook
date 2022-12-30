@@ -4,5 +4,4 @@ namespace: flux-system
 resources:
   - istio.yaml
   - flagger.yaml
-  - flagger-loadtester.yaml
   
