@@ -4,7 +4,9 @@ metadata:
   name: frontend-service
   namespace: default
 spec:
+  interval: 1m0s
+  prune: true
   images:
-    - name: ghcr.io/stefanprodan/podinfo
-      newName: ghcr.io/stefanprodan/podinfo # {"$imagepolicy": "flux-system:podinfo:name"}
-      newTag: 5.0.0 # {"$imagepolicy": "flux-system:podinfo:tag"}
+    - name: nginx
+      newName: nginx # {"$imagepolicy": "flux-system:apps/nginx:name"}
+      newTag: "1.23" # {"$imagepolicy": "flux-system:apps/nginx:tag"}
