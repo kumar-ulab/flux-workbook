@@ -3,6 +3,7 @@ kind: Kustomization
 resources:
 - ../../base/podinfo
 - policy.yaml
+- deploy.yaml
 images:
 - name: ghcr.io/stefanprodan/podinfo
   newName: ghcr.io/stefanprodan/podinfo # {"$imagepolicy": "default:podinfo:name"}
