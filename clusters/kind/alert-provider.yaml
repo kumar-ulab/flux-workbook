@@ -25,5 +25,5 @@ spec:
       name: '*'
     - kind: Kustomization
       name: '*'
-    - kind: Deployment
+    - kind: ImageUpdateAutomation
       name: '*'
