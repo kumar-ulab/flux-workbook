@@ -25,3 +25,5 @@ spec:
       name: '*'
     - kind: Kustomization
       name: '*'
+    - kind: Deployment
+      name: '*'
