@@ -8,7 +8,7 @@ spec:
     istio: gateway
   servers:
     - port:
-        number: 80
+        number: 39707
         name: http
         protocol: HTTP
       hosts:

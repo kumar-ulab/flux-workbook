@@ -4,3 +4,4 @@ resources:
 - deployment.yaml
 - registry.yaml
 - source.yaml
+- service.yaml
