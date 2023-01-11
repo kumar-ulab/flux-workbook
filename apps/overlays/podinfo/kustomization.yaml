@@ -5,5 +5,5 @@ resources:
 - policy.yaml
 images:
 - name: ghcr.io/stefanprodan/podinfo
-  newName: ghcr.io/stefanprodan/podinfo # {"$imagepolicy": "flux-system:podinfo:name"}
-  newTag: 5.0.3 # {"$imagepolicy": "flux-system:podinfo:tag"}
+  newName: ghcr.io/stefanprodan/podinfo # {"$imagepolicy": "default:podinfo:name"}
+  newTag: 5.0.3 # {"$imagepolicy": "default:podinfo:tag"}
