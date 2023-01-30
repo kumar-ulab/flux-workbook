@@ -7,7 +7,7 @@ metadata:
 apiVersion: source.toolkit.fluxcd.io/v1beta1
 kind: HelmRepository
 metadata:
-  name: nginx-ingress
+  name: ingress-nginx
   namespace: ingress-nginx
   labels:
     app.kubernetes.io/part-of: nginx
@@ -18,7 +18,7 @@ spec:
 apiVersion: helm.toolkit.fluxcd.io/v2beta1
 kind: HelmRelease
 metadata:
-  name: nginx-ingress
+  name: ingress-nginx
   namespace: ingress-nginx
 spec:
   releaseName: ingress-nginx
@@ -32,7 +32,7 @@ spec:
       chart: ingress-nginx
       sourceRef:
         kind: HelmRepository
-        name: nginx-ingress
+        name: ingress-nginx
   interval: 1h0m0s
   values:
     cr:
