@@ -27,10 +27,8 @@ metadata:
 spec:
   interval: 6h
   wait: true
-  timeout: 5m
   prune: true
   sourceRef:
     kind: OCIRepository
     name: flagger-loadtester
-  path: ./kustomize/tester
-  targetNamespace: apps
+  path: kustomize/tester
