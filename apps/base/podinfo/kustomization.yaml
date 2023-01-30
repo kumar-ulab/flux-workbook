@@ -5,3 +5,4 @@ resources:
 - registry.yaml
 - source.yaml
 - service.yaml
+- canary.yaml
