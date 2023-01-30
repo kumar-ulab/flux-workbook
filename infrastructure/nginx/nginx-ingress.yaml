@@ -21,7 +21,7 @@ metadata:
   name: nginx-ingress
   namespace: ingress-nginx
 spec:
-  releaseName: nginx-ingress
+  releaseName: ingress-nginx
   install:
     crds: Create
   upgrade:
