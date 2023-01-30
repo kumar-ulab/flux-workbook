@@ -45,3 +45,4 @@ spec:
     kind: GitRepository
     name: flagger-loadtester-git
   path: ./kustomize/tester
+  targetNamespace: apps
