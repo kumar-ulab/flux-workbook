@@ -28,7 +28,7 @@ spec:
     crds: CreateReplace
   chart:
     spec:
-      version: "1.22"
+      version: "4.4.2"
       chart: ingress-nginx
       sourceRef:
         kind: HelmRepository
