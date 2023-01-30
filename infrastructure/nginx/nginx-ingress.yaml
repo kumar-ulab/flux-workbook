@@ -2,24 +2,24 @@
 apiVersion: v1
 kind: Namespace
 metadata:
-  name: ingress-nginx
+  name: nginx-controller
 ---
 apiVersion: source.toolkit.fluxcd.io/v1beta1
 kind: HelmRepository
 metadata:
   name: ingress-nginx
-  namespace: ingress-nginx
+  namespace: nginx-controller
   labels:
     app.kubernetes.io/part-of: nginx
 spec:
   interval: 1h0m0s
-  url: https://kubernetes.github.io/ingress-nginx
+  url: https://kubernetes.github.io
 ---
 apiVersion: helm.toolkit.fluxcd.io/v2beta1
 kind: HelmRelease
 metadata:
   name: ingress-nginx
-  namespace: ingress-nginx
+  namespace: nginx-controller
 spec:
   releaseName: ingress-nginx
   install:
@@ -37,4 +37,4 @@ spec:
   values:
     cr:
       create: true
-      namespace: ingress-nginx
+      namespace: nginx-controller
